@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 
+/*Sintaxis y Operaciones Aritméticas*/
+
 
 int main()
 {
@@ -18,5 +20,6 @@ int main()
     printf("\nResta: %i",resta);
     printf("\nMultiplicacion: %i",mult);
     printf("\nDivision: %i",div);
+    
     return 0;
 }
