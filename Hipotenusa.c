@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//git push?
 int main(){
 
     float cat1, cat2, hipotenusa;
