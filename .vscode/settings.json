@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "iostream": "cpp",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "ostream": "cpp"
     }
 }
