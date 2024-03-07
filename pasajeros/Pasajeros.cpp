@@ -13,7 +13,20 @@ using namespace std;
     };
 
     struct nodo *cab, *aux, *aux2;
-    
+
+/*Para primer nodo:
+-Pedir memoria a un nodo apuntador
+-Registrar el dato
+-Apuntar al siguiente a NULL
+
+Para segundo nodo:(no se van a guardar más datos después del segundo)
+-Crear un nuevo nodo auxiliar
+-Pedir memoria y generar datos
+-Apuntar a NULL
+-La cabeza debe apuntar al nuevo siguiente en vez de NULL
+-Desaparecer auxiliar
+
+*/
     void registrar (){
 
         aux = (struct nodo *) malloc(sizeof(struct nodo));
@@ -52,9 +65,10 @@ using namespace std;
     }
 
     void mostrarDatos (){
+
+//Imprimir lo que hay en la cabeza en su apuntador valor
+
         for(aux=cab; aux!=NULL; aux=aux->sig)
-        
-        
         cout<<"Codigo: "<<aux->conteo<<endl<<"Documento: "<<aux->ndocumento<<endl<<"Nombre: "<<aux->nombre<<endl<<"=============================="<<endl;
     } 
 
@@ -69,8 +83,6 @@ using namespace std;
 
         //medida del menú, cout<<"==============================\n";
         {
-            
-            
             cout<<"1. Registrar paciente\n";
             cout<<"2. Ver pacientes\n";
             cout<<"3. Salir\n";
@@ -79,7 +91,7 @@ using namespace std;
             cout<<"---> ";cin>>opcion;
             cout<<"==============================\n";
             
-
+//switch para el menú
 
             switch (opcion)
             {
