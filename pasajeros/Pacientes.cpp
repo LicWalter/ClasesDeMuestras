@@ -8,6 +8,7 @@ using namespace std;
         int conteo;
         int ndocumento;
         char nombre[50];
+        char apellido[50];
 
         struct nodo *sig; 
     };
@@ -36,8 +37,14 @@ Para segundo nodo:(no se van a guardar más datos después del segundo)
         cout<<"==============================\n";
         aux->sig = NULL;
         
-        cout<<"Cual es el nombre del paciente?\n";
+        cout<<"Cual es el primer nombre del paciente?\n";
         cout<<"---> ";cin>>aux->nombre;
+        cout<<"==============================\n";
+        aux->sig = NULL;
+
+
+        cout<<"Cual es el primer apellido del paciente?\n";
+        cout<<"---> ";cin>>aux->apellido;
         cout<<"==============================\n";
         aux->sig = NULL;
 
@@ -69,7 +76,7 @@ Para segundo nodo:(no se van a guardar más datos después del segundo)
 //Imprimir lo que hay en la cabeza en su apuntador valor
 
         for(aux=cab; aux!=NULL; aux=aux->sig)
-        cout<<"Codigo: "<<aux->conteo<<endl<<"Documento: "<<aux->ndocumento<<endl<<"Nombre: "<<aux->nombre<<endl<<"=============================="<<endl;
+        cout<<"Codigo: "<<aux->conteo<<endl<<"Documento: "<<aux->ndocumento<<endl<<"Nombre: "<<aux->nombre<<" "<<aux->apellido<<endl<<"=============================="<<endl;
     } 
 
     int main(){
